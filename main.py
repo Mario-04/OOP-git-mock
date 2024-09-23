@@ -3,4 +3,9 @@ def create_list() -> list:
 
 
 if __name__ == '__main__':
-    print(create_list())
+    output = create_list()
+    lst = "["
+    for i in output:
+        lst += f" {i}"
+    lst += "]"
+    print(lst)
